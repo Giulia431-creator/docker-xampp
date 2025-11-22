@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <link rel="stylesheet" type="text/css" href="css/stile.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progetto dell'Anno</title>
+    <!-- generare la favicon della scuola ed inserirla nella scheda -->
+     <link rel="icon" type="image/x-icon" href="img/itisSimbolo.png">
+
+    <!-- foglio stile incorporato-->
+     <style type="text/css"> 
+    /* regole applicate alla tabella */
+      table, th, td 
+      {
+        padding: 1em;
+        width: fit-content;
+        border: 2px solid black ;
+        border-collapse: collapse;
+      } 
+
+      img {
+        border-radius: 10px;
+        display: block;
+        /*immagini al centro
+        margin-left: auto;
+        margin-right: auto; */
+        width: 50%;
+      }
+
+      /* #ndica l'attributo ID
+        può essere utilizzato una unica volta */
+        #titolo {
+            text-align: center ;    
+            text-decoration-line: overline underline;
+            text-decoration-color: blue;
+        }
+
+        /* il punto indica la proprietà CLASS 
+        può essere più volte su più tag 
+        */
+        .inf {
+            background-color: cornflowerblue;
+        }
+
+        .sis {
+            background-color: chartreuse;
+        }
+
+        .mat {
+         background-color:chocolate;
+        }
+
+        .tps {
+         background-color:magenta;
+        }
+
+        .rel {
+         background-color:brown;
+        }
+
+        .smot {
+         background-color:gold;
+        }
+
+        .ita {
+         background-color:darkorchid;
+        }
+
+        .gpoi {
+         background-color:darkolivegreen;
+        }
+
+        .ing {
+         background-color:springgreen;
+        }
+
+        .ai {
+         background-color:lightgreen;
+        }
+
+        .pot {
+         background-color:silver;
+        }
+
+        .sto {
+            background-color:salmon;
+        }
+    </style>
+
+</head>
+<body> 
+    <header>
+        <!-- tag titolo da 1 a 7 -->
+        <a href="https://3000-firebase-docker-xampp-1760179987696.cluster-ikslh4rdsnbqsvu5nw3v4dqjj2.cloudworkstations.dev/primaPagina5CM/">
+        <h1>IIS MARCONI PIERALISI</h1>
+        </a>
+        <nav> <!-- tag per la navbar barra orizzontale -->
+            <ul> <!-- Elenco non ordinato --> 
+                <li><a href="https://www.mcdonalds.it/ristorante/marche/ancona/jesi">Informatica</a></li>
+                <li><a href="https://kingattitude.it/?gad_source=1&gad_campaignid=18887616383&gbraid=0AAAAACvOJW57ehhbGkbK7Qa68-bj1D8bU&gclid=CjwKCAjwgeLHBhBuEiwAL5gNES9OyN7nCIOILh4FS0oZ3PgDRduJu7hMWmCBYyHofYpiGbEo3vIP-BoCc-0QAvD_BwE">Sistemi</a></li>
+                <li><a href="">Tpsit</a></li>
+                <li><a href="">Italiano</a></li>
+                <li><a href="">Matematica</a></li>
+                <li><a href="">Inglese</a></li>
+                <li><a href="">Scienze Motorie</a></li>
+                <li><a href="">Storia</a></li>
+                <li><a href="">GPOI</a></li>
+                <li><a href="">Religione</a></li>
+                <li><a href="pcto.html">PCTO</a></li>
+                
+                <li><a href="progettoAnno.html">Progetto dell'anno</a></li>
+            </ul>
+        </nav>
+    </header> 
+    <h1 id="titolo">progetto dell'Anno </h1>
+
+    <section>
+        <form name="Registrazione">
+            <label for="fname">Nome</label>
+            <input type="text" id="fname" name="fname" value=""><br><br>
+            
+            <label for="fname">Cognome</label>
+            <input type="text" id="fname" name="fname" value=""><br><br>
+    
+            <label for="citta_nascita">Città di nascita</label>
+    
+            <select name="citta_nascita" id="citta_nascita" required>
+                <option value=""></option>
+                <option value="Ancona">Ancona</option>
+                <option value="Jesi">Jesi</option>
+                <option value="Monsano">Monsano</option>
+            </select><br><br>
+    
+            <label for="data_nascita">Data di nascita</label>
+            <input type="date" id="data_nascita" name="data_nascita" required><br><br>
+    
+            <label for="genere">Genere</label><br><br>
+            <input type="radio" id="maschile" name="maschile" value="m" required>
+            <label for="maschile">Maschile</label><br><br>
+            <input type="radio" id="femminile" name="femminile" value="f">
+            <label for="femminile">Femminile</label><br><br>
+    
+            <input type="button" value="Invio" onclick="stampadati()">
+    
+    
+    
+    
+    
+        </form>
+    </section>
+
+    
+
+    <footer>
+        <p>
+            indirizzo
+            Via Raffaello Sanzio, 8
+            60035 - JESI (AN)
+        </p>
+    </footer>
+
+
+</body>
+</html>
